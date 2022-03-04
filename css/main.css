@@ -1,0 +1,175 @@
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  
+}
+
+.product__container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em 1.2em;
+}
+.product__description-title {
+  padding: 2em 1em;
+  margin-top: 2em;
+}
+
+.product__description-title h1 {
+  color: var(--very-dark-magenta);
+  margin: .5em .5em;
+  font-weight: 700;
+}
+
+.product__description-title p {
+  color: var(--dark-grayish-magenta);
+  line-height: 1.5;
+  font-size: .9rem;
+  padding: .5rem 0;
+}
+
+.product__description-title span {
+  display: block;
+}
+
+/* Rating section */
+
+.product__description-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__description-section .rating{
+  padding: 1em 2em;
+  background: var(--light-grayish-magenta);
+  margin: .55em 0;
+  border-radius: 9px;
+}
+
+.product__description-section img{
+  padding: 0 .2em;
+}
+
+.product__description-section span{
+  display: block;
+  font-size: .80rem;
+  font-weight: bold;
+  color: var(--very-dark-magenta);
+  margin-top: .5em;
+}
+
+/* Product review section */
+
+.product__user {
+  background: var(--very-dark-magenta);
+  margin-top: 2em;
+  padding: 2em;
+  border-radius: 8px;
+}
+
+.product__user .user__heading{
+  display: flex;
+  margin-bottom: 2em;
+  align-items: center;
+}
+
+.user__heading img {
+  width: 40px;
+  border-radius: 75px;
+}
+
+.user__name {
+  margin-left: 1.2em;
+}
+.user__heading h3 {
+  color: var(--white);
+  font-size: .75rem;
+  text-align: left;
+  padding: .45em 0;
+}
+
+.user__heading span {
+  color: var(--soft-pink);
+  display: block;
+  font-size: .80rem;
+}
+
+.product__user p {
+  color: var(--white);
+  font-size: .88rem;
+  text-align: left;
+  line-height: 1.7;
+}
+
+/* Deskop media query */
+
+@media only screen and (min-width: 1224px) {
+ .product__container {
+    padding: 0 9em;
+  }
+ .product__upper-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .product__description {
+   padding: 2em 3em;
+ }
+
+ .product__description-title {
+   text-align: left;
+   flex:.75;
+   max-width: 480px;
+ }
+
+ .product__description-title h1{
+    margin-left: 0;
+    font-size: 2.4rem;
+  }
+
+  .rating div {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .rating span {
+    display: inline;
+  }
+  /* .product__description-section .rating{
+    padding: 1em .75em;
+    width: 60%;
+    align-self: flex-start;
+  } */
+
+  .product__description-section {
+    display: flex;
+    flex: 1;
+    max-width: 560px;
+  }
+
+  .product__description-section .one {
+    align-self: flex-start;
+  } 
+
+  .product__description-section .two {
+    align-self: center;
+  }
+  
+  .product__description-section .three {
+    align-self: flex-end;
+  } 
+ 
+
+}
