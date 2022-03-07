@@ -133,4 +133,13 @@ body {
   .hero__body {
     max-width: 580px;
   }
+
+  .hero__call {
+    padding: 1em 0;
+  }
+
+  .hero__call span {
+    display: inline;
+  }
+  
 }
