@@ -1,0 +1,113 @@
+:root {
+  --color-red: hsl(0, 100%, 74%); 
+  --color-green: hsl(154, 59%, 51%);
+  --color-blue: hsl(248, 32%, 49%);
+  --color-dark-blue: hsl(249, 10%, 26%);
+  --color-grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url(/images/bg-intro-mobile.png);
+  background-color: var(--color-red);
+}
+
+.container {
+  padding: 4em 1.5em;
+}
+
+/* Title section */
+.hero__title {
+  text-align: center;
+  color: white
+}
+
+.hero__title h1{
+  margin-bottom: .7em;
+  font-size: 1.7rem;
+}
+
+.hero__title p{
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.hero__title span{
+  display: block;
+}
+
+/* Body Section */
+
+.hero__body {
+  text-align: center;
+  margin-top: 3.5em;
+}
+
+.hero__call {
+  background: var(--color-blue);
+  padding: 1.3em 0;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 8px 6px -6px var(--color-dark-blue);
+}
+
+.hero__call h3 {
+  font-size: 1.5rem;
+  
+}
+
+.hero__call span {
+  font-weight: 300;
+  display: block;
+}
+
+.hero__form {
+  margin-top: 1.2em;
+  background-color: white;
+  padding: 1em 1.2em;
+  border-radius: 10px;
+}
+
+.hero__form input {
+  width: 100%;
+  margin: .75em 0;
+  padding: 1.3em .5em;
+  border: 1px solid var(--color-grayish-blue);
+  border-radius: 5px;
+  color: var(--color-dark-blue);
+}
+.hero__form button {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: var(--color-green);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 8px 6px -6px var(--color-dark-blue);
+  margin-top: .5em;
+}
+
+.hero__form p {
+  font-size: .75rem;
+  padding: .5em;
+  margin-top: .7em;
+  color: var(--color-grayish-blue);
+}
+.hero__form span {
+  color: var(--color-red);
+  font-weight: 600;
+}
+::placeholder {
+  font-size: .85rem;
+  font-weight: 600;
+}
+
