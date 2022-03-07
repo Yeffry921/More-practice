@@ -111,3 +111,26 @@ body {
   font-weight: 600;
 }
 
+/* Desktop styles */
+
+@media only screen and (min-width: 1024px) {
+  .layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .hero__title {
+    text-align: left;
+    max-width: 530px;
+  }
+  .hero__title h1 {
+    font-size: 3rem;
+  }
+
+  .hero__body {
+    max-width: 580px;
+  }
+}
