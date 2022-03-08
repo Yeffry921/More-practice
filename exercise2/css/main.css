@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url(/images/bg-intro-mobile.png);
+  background: url(/exercise2/images/bg-intro-mobile.png);
   background-color: var(--color-red);
 }
 
@@ -94,6 +94,7 @@ body {
   font-weight: 500;
   box-shadow: 0 8px 6px -6px var(--color-dark-blue);
   margin-top: .5em;
+  cursor: pointer;
 }
 
 .hero__form p {
