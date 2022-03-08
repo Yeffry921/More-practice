@@ -1,0 +1,79 @@
+:root {
+  --light-cyan:hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue:hsl(217, 19%, 24%);
+  --dark-blue:hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: var(--dark-blue);
+}
+
+.container {
+  padding: 3em .75em;
+}
+
+.content {
+  text-align: center;
+  background: var(--dark-grayish-blue);
+  padding: 2em 1em;
+  border-radius: 10px;
+  position: relative;
+  max-width: 510px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  color: var(--neon-green);
+  font-size: .8rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  margin: 2em 0;
+}
+
+.content .advice-content {
+  font-size: 1.75rem;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.advice-divider-wrapper {
+  padding: 0 0 1.6em 0;
+}
+.content .advice-divider {
+  display: block;
+  margin-bottom: 2em;
+  margin: 0 auto;
+}
+
+.content .advice-icon-button {
+  padding: 1.5em;
+  background-color: var(--neon-green);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.advice-icon-button:hover {
+  background-color: hsl(150, 100%, 56%);
+}
+
+@media only screen and (min-width: 760px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
