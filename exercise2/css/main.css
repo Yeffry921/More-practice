@@ -75,12 +75,24 @@ body {
 
 .hero__form input {
   width: 100%;
-  margin: .75em 0;
+  margin: .65em 0;
   padding: 1.3em .5em;
   border: 1px solid var(--color-grayish-blue);
   border-radius: 5px;
   color: var(--color-dark-blue);
 }
+.hero__form .error-field {
+  border: 2px solid var(--color-red);
+}
+
+.error-message {
+  text-align: end;
+  font-size: .75rem;
+  color: var(--color-red);
+  font-style: italic;
+  margin-bottom: .75em;
+}
+
 .hero__form button {
   width: 100%;
   padding: 1em;
@@ -118,7 +130,7 @@ body {
     background: url(/exercise2/images/bg-intro-desktop.png);
     background-color: var(--color-red);
   }
-  
+
   .layout {
     display: flex;
     align-items: center;
