@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="calculator__container">
+    <div class="layout__container">
+      <!-- Input Section -->
+      <section class="calculator__input">
+        <div class="input__control">
+          <label for="bill">Bill</label>
+          <input type="text" name="bill" id="bill" placeholder="0">
+        </div>
+        
+        <div class="input__control">
+          <label for="tip">Select Tip %</label>
+          <button data-tip="5">5%</button>
+          <button data-tip="10">10%</button>
+          <button data-tip="15">15%</button>
+          <button data-tip="25">50%</button>
+          <input type="text" placeholder="Custom">
+        </div>
+
+        <div class="input__control">
+          <label for="numberOfPeople">Number of People</label>
+          <input type="text" placeholder="0">
+        </div>
+      </section>
+
+      <!-- Outout Section -->
+      <section class="calculator__output">
+        <div class="output__amount-wrap">
+          <h3>Tip Amount <span class="cut">/ Person</span></h3>
+
+          <h1>$4.27</h1>
+        </div>
+
+        <div class="output__total-wrap">
+          <h3>Total <span class="cut">/ Person</span></h3>
+
+          <h1>$32.79</h1>
+        </div>
+
+        <button>reset</button>
+      </section>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
