@@ -19,12 +19,10 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
-.calculator__container {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
+input, label, button {
+  font-family: inherit;
 }
+
 .calculator__title {
   margin: 2em 0;
   text-align: center;
@@ -85,7 +83,44 @@ body {
 
 .form__control .tip__custom {
   text-align: end;
+  
 }
+/* Output section */
+
 .calculator__output {
-  background-color: green;
+  background-color: var(--very-dark-cyan);
+  padding: 2.5em 1.2em;
+  border-radius: 15px;
+}
+
+.output__amount-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.calculator__output h3{
+  color: white;
+  font-size: 1.1rem;
+}
+
+.calculator__output .cut{
+  display: block;
+  color: var(--light-grayish-cyan);
+  font-size: .75rem;
+}
+.calculator__output h1 {
+  color: var(--strong-cyan);
+  font-size: 1.9rem;
+}
+
+.calculator__output .reset {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: .50em 0;
+  background-color: var(--strong-cyan);
+  border: none;
+  border-radius: 5px;
+  color: var(--very-dark-cyan);
 }
