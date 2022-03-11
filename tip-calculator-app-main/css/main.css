@@ -34,6 +34,8 @@ input, label, button {
   background-color: white;
   padding: 1em 1em;
   border-radius: 15px;
+  max-width: 375px;
+  margin: 0 auto;
 }
 .dollar__img, .person__image {
   position: absolute;
@@ -65,7 +67,7 @@ input, label, button {
 }
 .form__control .tip__wrapper {
   display: grid;
-  grid-template-columns: 150px 150px;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
