@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,25 +19,35 @@
 </head>
 <body>
   <main class="calculator__container">
+    <!-- Title SVG -->
+    <header class="calculator__title">
+      <img src="./images/logo.svg" alt="splitter text logo">
+    </header>
+
     <div class="layout__container">
       <!-- Input Section -->
       <section class="calculator__input">
-        <div class="input__control">
+        <div class="form__control">
           <label for="bill">Bill</label>
+          <img src="./images/icon-dollar.svg" class="dollar__img" alt="dollar sign icon">
           <input type="text" name="bill" id="bill" placeholder="0">
         </div>
         
-        <div class="input__control">
+        <div class="form__control">
           <label for="tip">Select Tip %</label>
-          <button data-tip="5">5%</button>
-          <button data-tip="10">10%</button>
-          <button data-tip="15">15%</button>
-          <button data-tip="25">50%</button>
-          <input type="text" placeholder="Custom">
+          <div class="tip__wrapper">
+            <button data-tip="5" class="tip__num">5%</button>
+            <button data-tip="10" class="tip__num">10%</button>
+            <button data-tip="15" class="tip__num">15%</button>
+            <button data-tip="25" class="tip__num">25%</button>
+            <button data-tip="25" class="tip__num">50%</button>
+            <input type="text" class="tip__custom" placeholder="Custom">
+          </div>
         </div>
 
-        <div class="input__control">
+        <div class="form__control">
           <label for="numberOfPeople">Number of People</label>
+          <img src="./images/icon-person.svg" alt="person image icon" class="person__image">
           <input type="text" placeholder="0">
         </div>
       </section>
