@@ -81,6 +81,12 @@ input, label, button {
   padding: .5em 0;
   border-radius: 7px;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.tip__num:hover {
+  background:var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
 }
 
 .form__control .tip__custom {
@@ -127,6 +133,18 @@ input, label, button {
   color: var(--very-dark-cyan);
 }
 
+.bill.correct {
+  border: 2px solid var(--strong-cyan);
+}
+.tip__custom.correct {
+  border: 2px solid var(--strong-cyan);
+}
+.tip__count.incorrect {
+  border: 2px solid orange;
+}
+.reset:hover {
+  background:var(--light-grayish-cyan);
+}
 @media only screen and (min-width: 920px) {
   .layout__container {
     display: flex;
