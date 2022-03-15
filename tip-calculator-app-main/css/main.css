@@ -133,14 +133,16 @@ input, label, button {
   color: var(--very-dark-cyan);
 }
 
-.bill.correct {
+.layout__container .correct {
   border: 2px solid var(--strong-cyan);
 }
-.tip__custom.correct {
-  border: 2px solid var(--strong-cyan);
-}
-.tip__count.incorrect {
+
+.layout__container .incorrect {
   border: 2px solid orange;
+}
+
+.form__control .tip__num.active {
+  background-color: var(--light-grayish-cyan);
 }
 .reset:hover {
   background:var(--light-grayish-cyan);
