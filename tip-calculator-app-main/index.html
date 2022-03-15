@@ -26,31 +26,31 @@
 
     <div class="layout__container">
       <!-- Input Section -->
-      <section class="calculator__input">
+      <form class="calculator__input">
         <div class="form__control">
           <label for="bill">Bill</label>
           <img src="./images/icon-dollar.svg" class="dollar__img" alt="dollar sign icon">
-          <input type="text" name="bill" id="bill" class="bill correct" placeholder="0">
+          <input type="text" name="bill" id="bill" class="bill" placeholder="0">
         </div>
         
         <div class="form__control">
           <label for="tip">Select Tip %</label>
           <div class="tip__wrapper">
-            <button data-tip="5" class="tip__num active">5%</button>
+            <button data-tip="5" class="tip__num">5%</button>
             <button data-tip="10" class="tip__num">10%</button>
             <button data-tip="15" class="tip__num">15%</button>
             <button data-tip="25" class="tip__num">25%</button>
-            <button data-tip="25" class="tip__num">50%</button>
-            <input type="text" class="tip__custom correct" placeholder="Custom">
+            <button data-tip="50" class="tip__num">50%</button>
+            <input type="text" class="tip__custom" placeholder="Custom">
           </div>
         </div>
 
         <div class="form__control">
           <label for="numberOfPeople">Number of People</label>
           <img src="./images/icon-person.svg" alt="person image icon" class="person__image">
-          <input type="text" placeholder="0" class="tip__count incorrect">
+          <input type="text" placeholder="0" class="tip__count">
         </div>
-      </section>
+      </form>
 
       <!-- Outout Section -->
       <section class="calculator__output">
@@ -58,13 +58,13 @@
           <div class="output__amount-wrap">
             <h3>Tip Amount <span class="cut">/ person</span></h3>
   
-            <h1>$0</h1>
+            <h1 class="tip__amount-person">$0</h1>
           </div>
   
           <div class="output__amount-wrap">
             <h3>Total <span class="cut">/ person</span></h3>
   
-            <h1>$0</h1>
+            <h1 class="tip__total-person">$0</h1>
           </div>
         </div>
         
@@ -77,5 +77,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Yeffry Fermin</a>.
   </div>
+  <script src="./js/index.js"></script>
 </body>
 </html>
