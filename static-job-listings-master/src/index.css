@@ -1,0 +1,95 @@
+:root {
+  /* (Background) */
+  --light-grayish-cyan: hsl(180, 52%, 96%); 
+  /* (Filter Tablets) */
+  --light-grayish-cyan2: hsl(180, 31%, 95%);
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+}
+hr {
+  margin-top: 1em;
+  border: 1px solid var(--dark-grayish-cyan);
+}
+body {
+  box-sizing: border-box; 
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+}
+input, label, button {
+  font-family: inherit;
+}
+.job__listing-container {
+  padding: 2em 1.5em;
+  background-color: var(--light-grayish-cyan);
+  height: 100vh;
+}
+
+.job__card {
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+  padding: 1em 0;
+  border-left: 5px solid var(--desaturated-dark-cyan);
+}
+
+.job__icon {
+  position: absolute;
+  top: 0;
+  left: 15;
+  transform: translateY(-50%);
+}
+.job__icon img {
+  width: 45px;
+}
+
+.job__overview {
+  padding: 1em .75em;
+}
+
+.job__overview .company__name {
+  color: var(--desaturated-dark-cyan);
+  font-weight: 700;
+  margin-right: .75em;
+}
+.job__overview button {
+  border: none;
+  margin: 0 .5em;
+  padding: .3em .6em;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  
+}
+.btn__new {
+  background-color: var(--desaturated-dark-cyan);
+  color: white;
+}
+.btn__featured {
+  background-color: black;
+  color: white;
+}
+
+.job__description p {
+  font-weight: 700;
+}
+
+.job__description span {
+  color: var(--dark-grayish-cyan);
+  font-size: .80rem;
+  margin-right: .25em;
+}
+.job__roles {
+  display: flex;
+  flex-wrap: wrap;
+}
+.job__roles span {
+  color: var(--desaturated-dark-cyan);
+  background-color: var(--light-grayish-cyan2);
+  margin-right: 1em;
+  margin-top: .75em;
+  padding: .6em .6em;
+  font-weight: 700;
+  border-radius: 5px;
+}
